@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		959622BE1F6E043D004A4F99 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959622BD1F6E043D004A4F99 /* AppDelegate.swift */; };
-		959622C01F6E043D004A4F99 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959622BF1F6E043D004A4F99 /* ViewController.swift */; };
+		959622C01F6E043D004A4F99 /* FirstTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959622BF1F6E043D004A4F99 /* FirstTableViewController.swift */; };
 		959622C31F6E043D004A4F99 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959622C11F6E043D004A4F99 /* Main.storyboard */; };
 		959622C51F6E043D004A4F99 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 959622C41F6E043D004A4F99 /* Assets.xcassets */; };
 		959622C81F6E043D004A4F99 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 959622C61F6E043D004A4F99 /* LaunchScreen.storyboard */; };
 		959622D31F6E043E004A4F99 /* videoCCCTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959622D21F6E043E004A4F99 /* videoCCCTests.swift */; };
 		959622DE1F6E043E004A4F99 /* videoCCCUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959622DD1F6E043E004A4F99 /* videoCCCUITests.swift */; };
+		959622EC1F6E0802004A4F99 /* BirdCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959622EB1F6E0802004A4F99 /* BirdCell.swift */; };
+		959622EE1F6E0BCA004A4F99 /* BirdCellDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 959622ED1F6E0BCA004A4F99 /* BirdCellDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,7 @@
 /* Begin PBXFileReference section */
 		959622BA1F6E043D004A4F99 /* videoCCC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = videoCCC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		959622BD1F6E043D004A4F99 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		959622BF1F6E043D004A4F99 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		959622BF1F6E043D004A4F99 /* FirstTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableViewController.swift; sourceTree = "<group>"; };
 		959622C21F6E043D004A4F99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		959622C41F6E043D004A4F99 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		959622C71F6E043D004A4F99 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +49,8 @@
 		959622D91F6E043E004A4F99 /* videoCCCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = videoCCCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		959622DD1F6E043E004A4F99 /* videoCCCUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = videoCCCUITests.swift; sourceTree = "<group>"; };
 		959622DF1F6E043E004A4F99 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		959622EB1F6E0802004A4F99 /* BirdCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirdCell.swift; sourceTree = "<group>"; };
+		959622ED1F6E0BCA004A4F99 /* BirdCellDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BirdCellDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +102,10 @@
 			isa = PBXGroup;
 			children = (
 				959622BD1F6E043D004A4F99 /* AppDelegate.swift */,
-				959622BF1F6E043D004A4F99 /* ViewController.swift */,
+				959622BF1F6E043D004A4F99 /* FirstTableViewController.swift */,
 				959622C11F6E043D004A4F99 /* Main.storyboard */,
+				959622ED1F6E0BCA004A4F99 /* BirdCellDelegate.swift */,
+				959622EB1F6E0802004A4F99 /* BirdCell.swift */,
 				959622C41F6E043D004A4F99 /* Assets.xcassets */,
 				959622C61F6E043D004A4F99 /* LaunchScreen.storyboard */,
 				959622C91F6E043D004A4F99 /* Info.plist */,
@@ -193,6 +199,7 @@
 				TargetAttributes = {
 					959622B91F6E043D004A4F99 = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = LZJ74AK2BB;
 						ProvisioningStyle = Automatic;
 					};
 					959622CD1F6E043E004A4F99 = {
@@ -259,7 +266,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				959622C01F6E043D004A4F99 /* ViewController.swift in Sources */,
+				959622C01F6E043D004A4F99 /* FirstTableViewController.swift in Sources */,
+				959622EE1F6E0BCA004A4F99 /* BirdCellDelegate.swift in Sources */,
+				959622EC1F6E0802004A4F99 /* BirdCell.swift in Sources */,
 				959622BE1F6E043D004A4F99 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -414,6 +423,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LZJ74AK2BB;
 				INFOPLIST_FILE = videoCCC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = codingdojo.videoCCC;
@@ -426,6 +436,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = LZJ74AK2BB;
 				INFOPLIST_FILE = videoCCC/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = codingdojo.videoCCC;
